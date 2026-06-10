@@ -111,11 +111,11 @@
 
 | # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
 |---|----------|-----------------|------------------------------|-------------------|-------------------|
-| 1 | What tips exist for registering for classes successfully? | Plan ahead using prerequisites of the class through your academic class application platform. Use the waitlist if a course is full, but try your best to sign up for classes early. | ..|.. |.. |
-| 2 |What fields of work are most common for college gratuates? |The top fields of work most common for college graduates are Business, Healthcare, Education, STEM, with specific employment % data | ...| ..| ..|
-| 3 | What study habits or behaviors is recommended for academic success? | It is best to attend office hours, manage time efficiently, and form study groups within your class to result in better academic success. | ..| ..| ..|
-| 4 | What dining halls or meal plan options are avaiable at GMU?|There are many dining halls available such as Southside, Ike's, The Spot, and several small food franchises scattered across the GMU Campus. Look into the Meal Plans website to learn more about the possible meal plans. | .| .| .|
-| 5 |What specific resources does GMU offer to help students find internships? |There are different platforms available for students to find internships includeing Handshake, Career Services, and Employer Events. |.. | .| .|
+| 1 | What tips exist for registering for classes successfully? | Plan ahead using prerequisites of the class through your academic class application platform. Use the waitlist if a course is full, but try your best to sign up for classes early. | Correct - Listed 6 specific tips from CSUN source|Partialy Relevant |Accurate |
+| 2 |What fields of work are most common for college gratuates? |The top fields of work most common for college graduates are Business, Healthcare, Education, STEM, with specific employment % data | Correct - listed the specific occupations categories listed from the BLS website| Relevant| Accurate|
+| 3 | What study habits or behaviors is recommended for academic success? | It is best to attend office hours, manage time efficiently, and form study groups within your class to result in better academic success. | Correct - Provided details that were specified in several articles (class engagement, communication w/ professors, etc.)| Relevant| Accurate
+| 4 | What dining halls or meal plan options are avaiable at GMU?|There are many dining halls available such as Southside, Ike's, The Spot, and several small food franchises scattered across the GMU Campus. Look into the Meal Plans website to learn more about the possible meal plans. | Correct - Described the different options available at GMU (different food groups, Starship robots, Residence Halls/ Dining Halls)| Relevant| Accurate|
+| 5 |What specific resources does GMU offer to help students find internships? |There are different platforms available for students to find internships includeing Handshake, Career Services, and Employer Events. |Correct - Provided the tools/ resources available | Partially Relevant| Accurate|
 
 **Retrieval quality:** Relevant / Partially relevant / Off-target  
 **Response accuracy:** Accurate / Partially accurate / Inaccurate
@@ -135,13 +135,13 @@
      "The embedding model treated the professor's nickname as out-of-vocabulary and returned
      results from an unrelated review" is an explanation. -->
 
-**Question that failed:**
+**Question that failed:** What tips exist for registering for classes successfully?
 
-**What the system returned:**
+**What the system returned:** Returned the correct answere but there was a weak semantic match. 
 
-**Root cause (tied to a specific pipeline stage):**
+**Root cause (tied to a specific pipeline stage):** This can be due to the CSUN registration page that I included. Yes, this source was not a gmu source and I probably should have changed it before continuing forward. The other reason could be beacuse the it wasn't able to distinguish between a registration tip and a general academic advice hence mixing it all together.
 
-**What you would change to fix it:**
+**What you would change to fix it:** Increase the chunk size to 800 or more (initially I had it at 400, but there were errors in the answers so I changed it later to 800) so that each chunk contains more information/ context.
 
 ---
 
