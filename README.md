@@ -53,7 +53,7 @@
 
 **Why these choices fit your documents:** This is eough characters to capture 1 complete tip or idea without merging unrelated topics. The character overlap will preserve the contect at boundries so a fact split across two chunks is retrievable.
 
-**Final chunk count:**
+**Final chunk count:** 276
 
 ---
 ## Architecture - Pipline Diagram
@@ -79,7 +79,7 @@
      Consider: context length limits, multilingual support, accuracy on domain-specific text,
      latency, and local vs. API-hosted. -->
 
-**Model used:**
+**Model used:** ll-MiniLM-L6-v2 via sentence-transformers
 
 **Production tradeoff reflection:**
 
@@ -117,6 +117,39 @@
 **Retrieval quality:** Relevant / Partially relevant / Off-target  
 **Response accuracy:** Accurate / Partially accurate / Inaccurate
 
+### Chunk Output
+<Source : Marquette Freshman Advice
+Chunk  : What Piece of Advice Would You Give to Your Freshman Self? | by Andi Sirokman | We Are Marquette
+Stories of Marquette University students and alumni
+What Piece of Advice Would You Give to Your Freshman Self?
+Press enter or click to view image in full size
+Photo by Rachel Morrison from the
+Marquette 
+------------------------------------------------------------
+
+Source : Marquette Freshman Advice
+Chunk  : your inbox
+You will meet more people in the first few weeks of college than you’ve met in the previous year, if not longer.
+The trick to getting the confidence to talk to new people is to assume that they already like you before you’ve even talked to them.
+That changes your entire mindset before the
+------------------------------------------------------------
+
+Source : Marquette Freshman Advice
+Chunk  : al and mental well being.
+You’re going to be exposed to so many new things, places, people and experiences that it’ll be very easy to overstress yourself. Make sure to look after your health. Go to bed early. Take a half hour everyday to do something you enjoy. If something’s on your mind, go talk t
+------------------------------------------------------------
+
+Source : Marquette Freshman Advice
+Chunk  : ous, but they’re massively important.
+You are going to make so, so many mistakes in college.
+That is a perfectly normal part of life. It’s your first time living on your own, you’re not going to get a lot of things even close to perfect. Learn from your mistakes, but do not dwell on them. A failed e
+------------------------------------------------------------
+
+Source : Marquette Freshman Advice
+Chunk  : n on your worth as a human being.
+Go out of your way to make an impression on faculty members.
+You may not like or agree with some of them, but they know things that you don’t and desperately want to see you succeed. Go to their office hours at least once per semester, if only to introduce yourself.>
+------------------------------------------------------------
 ---
 
 ## Failure Case Analysis
