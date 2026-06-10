@@ -24,7 +24,7 @@
 
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 | | |https://stories.marquette.edu/what-piece-of-advice-would-you-give-to-your-freshman-self-fc84d53af190 |
+| 1 |Medium - Marquette University | University Freshman Advice Article | https://stories.marquette.edu/what-piece-of-advice-would-you-give-to-your-freshman-self-fc84d53af190 |
 | 2 | | | |
 | 3 | | | |
 | 4 | | | |
