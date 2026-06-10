@@ -47,7 +47,7 @@
      - Any preprocessing you did before chunking (e.g., stripping HTML, removing headers)
      - What your final chunk count was across all documents -->
 
-**Chunk size:** 200-400 characters
+**Chunk size:** 400 characters
 
 **Overlap:** 50 characters
 
@@ -62,7 +62,7 @@
 │  Document Ingestion │────▶│      Chunking        │────▶│  Embedding +        │────▶│     Retrieval       │────▶│     Generation      │
 │─────────────────────│     │─────────────────────│     │   Vector Store      │     │─────────────────────│     │─────────────────────│
 │ requests            │     │ Custom paragraph-   │     │─────────────────────│     │ Semantic similarity │     │ Groq API            │
-│ BeautifulSoup4?     │     │ aware splitter      │     │ all-MiniLM-L6-v2    │     │ search              │     │ llama-3.3-70b       │
+│ BeautifulSoup4     │     │ aware splitter      │     │ all-MiniLM-L6-v2    │     │ search              │     │ llama-3.3-70b       │
 │ 10 source URLs      │     │ Chunk: 400 chars    │     │ (sentence-          │     │ top-k = 4           │     │ -versatile          │
 │                     │     │ Overlap: 50 chars   │     │  transformers)      │     │                     │     │ Grounded prompt     │
 │                     │     │                     │     │ ChromaDB            │     │ Returns chunks +    │     │ Source attribution  │
