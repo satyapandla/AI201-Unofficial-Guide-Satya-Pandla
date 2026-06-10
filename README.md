@@ -13,7 +13,8 @@
      Why is this knowledge valuable, and why is it hard to find through official channels?
      Example: "Student reviews of CS professors at [university] — useful because official
      course descriptions don't reflect teaching style, exam difficulty, or workload." -->
-< The topic I chose >
+> The topic I chose for this project was a guide to help college students. When you are an incoming freshman at a university, you are fed so much information or none at all. Sometimes we don't even know who to ask or where to find the resources, so this tools is just what you need! This tool is created to help freshmen (or any student) find the answers to their questions.
+> This project will be based on George Mason University and will use other external sources for information on advice for college students.
 ---
 
 ## Document Sources
@@ -24,7 +25,7 @@
 
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 |Medium - Marquette University | University Freshman Advice Article | https://stories.marquette.edu/what-piece-of-advice-would-you-give-to-your-freshman-self-fc84d53af190 |
+| 1 |Medium - Marquette University | University Freshmen Advice Article | https://stories.marquette.edu/what-piece-of-advice-would-you-give-to-your-freshman-self-fc84d53af190 |
 | 2 | South Mountain Community College | College Advice | https://www.southmountaincc.edu/current-students/top-tips-college-success |
 | 3 | CSUN - University Article | Registration Advice | https://www.csun.edu/current-students/register/tips |
 | 4 | GMU Website | Dining Hall Information | https://www.gmu.edu/student-life/living-and-dining |
