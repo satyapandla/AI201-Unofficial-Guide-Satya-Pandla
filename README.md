@@ -97,9 +97,9 @@
      Do not just say "I told it to use the documents" — show the actual instruction or explain
      the mechanism. -->
 
-**System prompt grounding instruction:**
+**System prompt grounding instruction:** You are a guiding college student advisor at George Mason University. Answer the student's question using only the information provided in the documents listed below. Do not use any knowledge from your training data. By any chance the documents do not contain enough information to answer, then respond with: "I don't have enough information in my documents to answer that question.".
 
-**How source attribution is surfaced in the response:**
+**How source attribution is surfaced in the response:** The source names were appended after the generation by extracting the source label metadata field from the ChromaDB chunk, then it was formatted as a numbered list. The attribution was guaranteed by the pipline structure in the query python file.
 
 ---
 
@@ -150,9 +150,9 @@
 <!-- Reflect on how planning.md shaped your implementation.
      Answer both questions with at least 2–3 sentences each. -->
 
-**One way the spec helped you during implementation:**
+**One way the spec helped you during implementation:** Write the chunk strategy in readme/ planning.md before coding. I initially had it at 400 characters but after testing it out, I realized I had to increase the chunk size to 800 characters to get the best answers possible.
 
-**One way your implementation diverged from the spec, and why:**
+**One way your implementation diverged from the spec, and why:** I assumed the spec for chunk size would stay fixed at 400 characeters, but when working on Milestone 4 for retrieval testing, I noticided it carried sufficient semantic signal. This is why I increaded it to 800 characters which improved the retrieval quality.
 
 ---
 
@@ -169,12 +169,12 @@
 
 **Instance 1**
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+- *What I gave the AI:* My Document Sources table, Chunking Strategy section, and pipeline diagram from planning.md
+- *What it produced:* ingest.py with scraping via requests/BeautifulSoup, paragraph-aware chunking, and ChromaDB storage with source metadata
+- *What I changed or overrode:* The initial cleaner didnt filter the navigation text aggressively/ well enough. I made the AI filter and drop lines which contained: skip to, open in app, sign in. This reduced the total chunks a lot.
 
 **Instance 2**
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+- *What I gave the AI:*  Retrieval Approach section and grounding requirement
+- *What it produced:* query.py with a retrieve() function, generate() function using Groq llama-3.3-70b-versatile, and an ask() wrapper
+- *What I changed or overrode:* Initially the prompt only suggesting grounding instead of enforcing it, so I changed it to explicitly forbit using any training knowledge and only forcus on the documents provided. If there was a question which was not trained to be answered from the documents, then it will let the user know they cannot answer it.
