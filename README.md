@@ -108,11 +108,11 @@
 
 | # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
 |---|----------|-----------------|------------------------------|-------------------|-------------------|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | What tips exist for registering for classes successfully? | Plan ahead using prerequisites of the class through your academic class application platform. Use the waitlist if a course is full, but try your best to sign up for classes early. | ..|.. |.. |
+| 2 |What fields of work are most common for college gratuates? |The top fields of work most common for college graduates are Business, Healthcare, Education, STEM, with specific employment % data | ...| ..| ..|
+| 3 | What study habits or behaviors is recommended for academic success? | It is best to attend office hours, manage time efficiently, and form study groups within your class to result in better academic success. | ..| ..| ..|
+| 4 | What dining halls or meal plan options are avaiable at GMU?|There are many dining halls available such as Southside, Ike's, The Spot, and several small food franchises scattered across the GMU Campus. Look into the Meal Plans website to learn more about the possible meal plans. | .| .| .|
+| 5 |What specific resources does GMU offer to help students find internships? |There are different platforms available for students to find internships includeing Handshake, Career Services, and Employer Events. |.. | .| .|
 
 **Retrieval quality:** Relevant / Partially relevant / Off-target  
 **Response accuracy:** Accurate / Partially accurate / Inaccurate
