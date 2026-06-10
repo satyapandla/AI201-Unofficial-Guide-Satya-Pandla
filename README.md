@@ -47,11 +47,11 @@
      - Any preprocessing you did before chunking (e.g., stripping HTML, removing headers)
      - What your final chunk count was across all documents -->
 
-**Chunk size:**
+**Chunk size:** 200-400 characters
 
-**Overlap:**
+**Overlap:** 50 characters
 
-**Why these choices fit your documents:**
+**Why these choices fit your documents:** This is eough characters to capture 1 complete tip or idea without merging unrelated topics. The character overlap will preserve the contect at boundries so a fact split across two chunks is retrievable.
 
 **Final chunk count:**
 
