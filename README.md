@@ -81,8 +81,11 @@
 
 **Model used:** ll-MiniLM-L6-v2 via sentence-transformers
 
-**Production tradeoff reflection:**
-
+**Production tradeoff reflection:** 
+- Context Length: all-MiniLM-L6-v2 has a 256-token limit, so the longer chunks get cut off meaning less information loss per chunk.
+- Cost vs. accuracy: Local models are free but less accurate. API-hosted models cost per token but return better retrieval results at a larger scale.
+- Multilingual support: all-MiniLM-L6-v2 is English-only. A university serving international students would need a multilingual model.
+- Latency: Local models run on your CPU and API models offload computation but add network delay.
 ---
 
 ## Grounded Generation
