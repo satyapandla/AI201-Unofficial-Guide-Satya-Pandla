@@ -56,8 +56,7 @@
 **Final chunk count:**
 
 ---
-**Pipeline Diagram**
-## Architecture
+## Architecture - Pipline Diagram
 ```
 ┌─────────────────────┐     ┌─────────────────────┐     ┌─────────────────────┐     ┌─────────────────────┐     ┌─────────────────────┐
 │  Document Ingestion │────▶│      Chunking        │────▶│  Embedding +        │────▶│     Retrieval       │────▶│     Generation      │
