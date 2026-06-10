@@ -25,15 +25,15 @@
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
 | 1 |Medium - Marquette University | University Freshman Advice Article | https://stories.marquette.edu/what-piece-of-advice-would-you-give-to-your-freshman-self-fc84d53af190 |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 2 | South Mountain Community College | College Advice | https://www.southmountaincc.edu/current-students/top-tips-college-success |
+| 3 | CSUN - University Article | Registration Advice | https://www.csun.edu/current-students/register/tips |
+| 4 | GMU Website | Dining Hall Information | https://www.gmu.edu/student-life/living-and-dining |
+| 5 | GMU Website | GMU Parking | https://transportation.gmu.edu/parking/ |
+| 6 | GMU Website | GMU Clubs & Organizations | https://si.gmu.edu/rso/ |
+| 7 | GMU Website | GMU IT Degree | https://catalog.gmu.edu/colleges-schools/engineering-computing/school-computing/information-sciences-technology/information-technology-bs/ |
+| 8 | GMU Website | Student Life | https://www.gmu.edu/student-life |
+| 9 | GMU Website | Internships | https://careers.gmu.edu/find-job-or-internship |
+| 10 | USBLS | Careers & College Majors | https://www.bls.gov/careeroutlook/2021/article/field-of-degree-and-careers.htm |
 
 ---
 
