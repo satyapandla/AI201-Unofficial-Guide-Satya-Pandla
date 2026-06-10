@@ -118,13 +118,13 @@
 **Response accuracy:** Accurate / Partially accurate / Inaccurate
 
 ### Chunk Output
-<Source : Marquette Freshman Advice
-Chunk  : What Piece of Advice Would You Give to Your Freshman Self? | by Andi Sirokman | We Are Marquette
-Stories of Marquette University students and alumni
+<Source : Marquette Freshman Advice>
+<Chunk  : What Piece of Advice Would You Give to Your Freshman Self? | by Andi Sirokman | We Are Marquette>
+<Stories of Marquette University students and alumni
 What Piece of Advice Would You Give to Your Freshman Self?
 Press enter or click to view image in full size
 Photo by Rachel Morrison from the
-Marquette 
+Marquette</Stories>
 ------------------------------------------------------------
 
 Source : Marquette Freshman Advice
