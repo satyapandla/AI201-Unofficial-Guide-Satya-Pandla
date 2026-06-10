@@ -56,17 +56,20 @@
 
 ---
 ## Architecture
+## Architecture
 
+```
 ┌─────────────────────┐     ┌─────────────────────┐     ┌─────────────────────┐     ┌─────────────────────┐     ┌─────────────────────┐
 │  Document Ingestion │────▶│      Chunking        │────▶│  Embedding +        │────▶│     Retrieval       │────▶│     Generation      │
 │─────────────────────│     │─────────────────────│     │   Vector Store      │     │─────────────────────│     │─────────────────────│
 │ requests            │     │ Custom paragraph-   │     │─────────────────────│     │ Semantic similarity │     │ Groq API            │
-│ BeautifulSoup4     │     │ aware splitter      │     │ all-MiniLM-L6-v2    │     │ search              │     │ llama-3.3-70b       │
+│ BeautifulSoup4      │     │ aware splitter      │     │ all-MiniLM-L6-v2    │     │ search              │     │ llama-3.3-70b       │
 │ 10 source URLs      │     │ Chunk: 400 chars    │     │ (sentence-          │     │ top-k = 4           │     │ -versatile          │
 │                     │     │ Overlap: 50 chars   │     │  transformers)      │     │                     │     │ Grounded prompt     │
 │                     │     │                     │     │ ChromaDB            │     │ Returns chunks +    │     │ Source attribution  │
 │                     │     │                     │     │ (persistent local)  │     │ source metadata     │     │ in every response   │
 └─────────────────────┘     └─────────────────────┘     └─────────────────────┘     └─────────────────────┘     └─────────────────────┘
+```
 
 ---
 
